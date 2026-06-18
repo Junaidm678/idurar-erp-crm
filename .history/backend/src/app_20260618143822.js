@@ -18,13 +18,6 @@ const fileUpload = require('express-fileupload');
 // create our Express app
 const app = express();
 
-app.get('/', (req, res) => {
-  res.json({
-    success: true,
-    message: 'API is running successfully 🚀',
-  });
-});
-
 app.use(
   cors({
     origin: true,
